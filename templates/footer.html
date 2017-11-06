@@ -1,0 +1,54 @@
+{# footer.html #}
+<div style="margin-top:10px;font-size:10px;" align="center">
+    &copy; Copyright ABC A/S - Smart System, release -
+    <!--a href='https://www.google.com/analytics/web/?hl=en&pli=1#report/visitors-overview/a42354403w72070126p74368750/'>Analytics</a-->
+</div>
+<!--script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42354403-1', 'lumigon.com');
+  ga('send', 'pageview');
+
+</script-->
+
+{#<div id="floatbox" style="position: fixed; right: 10px; bottom: 100px; display: none;">#}
+{#  <a id='gotop' class="btn btn-default btn-inverse" title="Go Top!"><i class="glyphicon glyphicon-circle-arrow-up glyphicon glyphicon-white"></i></a>#}
+{#</div>#}
+{#<script type="text/javascript">#}
+{#  $(function () {#}
+{#    $.ajaxSetup({#}
+{#      error: function (jqXHR, exception) {#}
+{#        if (jqXHR.status == 403) {#}
+{#          alert('Permission denied. [403]');#}
+{#        } else if (jqXHR.status == 404) {#}
+{#          alert('Requested page not found. [404]');#}
+{#        } else if (jqXHR.status == 500) {#}
+{#          alert('Internal Server Error [500].');#}
+{#        } else if (exception === 'parsererror') {#}
+{#          alert('Requested JSON parse failed.');#}
+{#        } else if (exception === 'timeout') {#}
+{#          alert('Time out error.');#}
+{#        } else if (exception === 'abort') {#}
+{#          alert('Ajax request aborted.');#}
+{#        } else {#}
+{#          alert('Uncaught Error.\n' + jqXHR.responseText);#}
+{#        }#}
+{#      }#}
+{#    });#}
+{#    $(window).bind("scroll", function () {#}
+{#      var scrollTopNum = $(document).scrollTop(),#}
+{#          winHeight = $(window).height(),#}
+{#          floatbox = $('#floatbox');#}
+{#      (scrollTopNum > 0) ? floatbox.fadeIn("fast") : floatbox.fadeOut("fast");#}
+{#      if (!-[1, ] && !window.XMLHttpRequest) {#}
+{#        floatbox.css("top", scrollTopNum + winHeight - 200);#}
+{#      }#}
+{#    });#}
+{#    $('#gotop').click(function () {#}
+{#      $('html,body').animate({scrollTop:0}, 'slow');#}
+{#    });#}
+{#  });#}
+{#</script>#}

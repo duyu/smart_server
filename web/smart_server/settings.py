@@ -25,7 +25,7 @@ SECRET_KEY = 'r^t(y8iqlgx6gwdvlmv&^na(hl0q#-cg)9-cndv-_os6%b+%xd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', False)
 
-ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', [])
+ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', "").split()
 
 
 # Application definition

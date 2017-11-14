@@ -22,6 +22,11 @@ def login(request):
             else:
                     raise PermissionDenied
         else:
-            return HttpResponseRedirect("/accounts/login/")
+            return HttpResponseRedirect("/login/")
     else:
         return render(request, 'login.html')
+
+def logout(request):
+    # Delete user session and redirect to login screen
+    auth.logout(request)
+    return HttpResponseRedirect("/login")
